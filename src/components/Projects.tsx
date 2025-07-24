@@ -40,7 +40,7 @@ const projects = [
     title: "Réplica Spotify Web",
     type: "next",
     desc: "Este projeto recria a página pública do Spotify, com foco em responsividade, design moderno e interatividade. Desenvolvido com React e Tailwind CSS, o layout apresenta seções como carrosséis de playlists, destaques musicais e navegação visual, simulando a experiência do site oficial sem funcionalidades de login ou reprodução musical.",
-    src: "/public-spotify-clone.vercel.app",
+    src: "https://public-spotify-clone.vercel.app/",
   },
   {
     img: "/images/pokedex.png",
