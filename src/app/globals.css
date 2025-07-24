@@ -258,7 +258,7 @@ button {
   opacity: 1;
 }
 
-@keyframes botton-header-show {
+@keyframes bottom-header-show {
   0% {
     left: -600px;
     top: 83px;
@@ -269,7 +269,7 @@ button {
   }
 }
 
-@keyframes home-show {
+@keyframes welcome-show {
   0% {
     left: 0px;
     top: -300px;
@@ -301,17 +301,11 @@ button {
   html {
     font-size: 59%;
   }
-  #bottom-header {
-    top: 83px;
-  }
 }
 
 @media only screen and (max-width: 900px) {
   html {
     font-size: 56%;
-  }
-  #bottom-header {
-    top: 73.5px;
   }
   #header-content {
     padding: 0 2rem;
@@ -351,7 +345,7 @@ button {
   .project-content {
     align-items: center;
   }
-  @keyframes botton-header-show {
+  @keyframes bottom-header-show {
     0% {
       left: -600px;
       top: 74px;
@@ -379,12 +373,11 @@ button {
   html {
     font-size: 47.5%;
   }
+
   #navbar {
     display: none;
   }
-  #botton-header {
-    top: 59.5px;
-  }
+
   #burguer-cont {
     display: block;
   }
@@ -392,51 +385,49 @@ button {
     visibility: visible;
     opacity: 1;
   }
-  .home {
-    height: unset;
-    min-height: unset;
-  }
-  #home-content {
+
+  #welcome-content {
     padding: 20rem 0 13rem 0;
     margin: auto;
-    position: static;
     transform: translate(0, 0);
   }
-  #home-title {
+
+  #welcome-title {
     font-size: 4rem;
   }
-  #home-mouse-scroll-cont {
+
+  #mouse-scroll-cont {
     display: none;
   }
-  .about-cont-title::after,
-  .project-cont-title::after,
-  .contact-cont-title::after {
+
+  .section-title::after {
     top: calc(80% + 1.3rem);
   }
+
   .skill img {
     width: 70px;
     height: 82px;
   }
+
   #logo-git {
     width: 110px;
     height: 70px;
   }
-  .project-title {
-    font-size: 2.4rem;
-  }
-  .project-description {
+
+  .description {
     font-size: 1.7rem;
   }
-  .contact-form-container {
+
+  .form-container {
     padding: 3rem;
   }
-  .contact-form-field {
+  .form-field {
     margin-bottom: 3rem;
   }
   .contact-btn {
     width: 100%;
   }
-  @keyframes botton-header-show {
+  @keyframes bottom-header-show {
     0% {
       left: -600px;
       top: 59px;

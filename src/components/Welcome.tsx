@@ -3,23 +3,23 @@ import React from "react";
 export default function Welcome() {
   return (
     <section
-      id="home"
-      className="relative min-h-screen flex flex-col justify-center items-center bg-[linear-gradient(to_right,rgba(245,245,245,0.8),rgba(245,245,245,0.8)),url(/daac885…/c157c/assets/svg/common-bg.svg)] bg-center animate-[home-show_1s]"
+      id="welcome"
+      className="welcome relative min-h-screen flex flex-col justify-center items-center bg-[linear-gradient(to_right,rgba(245,245,245,0.8),rgba(245,245,245,0.8)),url(/daac885…/c157c/assets/svg/common-bg.svg)] bg-center animate-[welcome-show_1s]"
     >
       <div
-        id="home-content"
+        id="welcome-content"
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[92%] max-w-[90rem]"
       >
         {/* Título */}
         <h1
-          id="home-title"
+          id="welcome-title"
           className="text-[6rem] text-[#333] font-extrabold uppercase tracking-[3px] text-center"
         >
           Bem-vindo(a)!
         </h1>
 
         {/* Info */}
-        <div id="home-info" className="mt-[3rem] mx-auto max-w-[80rem]">
+        <div id="welcome-info" className="mt-[3rem] mx-auto max-w-[80rem]">
           <p className="text-[#333] text-[2.2rem] text-center leading-[1.6] w-full">
             Aqui você conhecerá um entusiasta da web apaixonado por criar
             experiências incríveis.
@@ -27,7 +27,7 @@ export default function Welcome() {
         </div>
 
         {/* Botão */}
-        <div id="home-btn" className="mt-[5rem] text-center text-white">
+        <div id="welcome-btn" className="mt-[5rem] text-center text-white">
           <a href="#projetos" className="btn hover:-translate-y-[3px]">
             Projetos
           </a>
@@ -35,7 +35,7 @@ export default function Welcome() {
       </div>
 
       <div
-        id="home-mouse-scroll-cont"
+        id="mouse-scroll-cont"
         className="absolute bottom-[5%] left-1/2 -translate-x-1/2"
       >
         <div

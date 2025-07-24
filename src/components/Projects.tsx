@@ -66,7 +66,7 @@ export default function Projects() {
           {projects.map(({ img, alt, title, desc, src }) => (
             <div
               key={title}
-              className="grid grid-cols-2 gap-[5rem] mb-[11rem] last:mb-0"
+              className="grid grid-cols-2 gap-[5rem] mb-[11rem] last:mb-0 max-[620px]:grid-cols-1 max-[620px]:gap-[1rem]"
             >
               <div className="border-[10px] border-[#111] rounded-[10px] overflow-hidden">
                 <img
@@ -76,18 +76,22 @@ export default function Projects() {
                 />
               </div>
               <div className="flex flex-col justify-center items-start p-8">
-                <h3 className="font-bold text-[2.8rem] mb-8">{title}</h3>
+                <h3 className="font-bold text-[2.8rem] mb-8  max-[620px]:mx-auto">
+                  {title}
+                </h3>
                 <p className="text-[1.8rem] text-justify text-[#666] max-w-[60rem] leading-[1.7] mb-12">
                   {desc}
                 </p>
-                <a
-                  href={src}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn btn-average"
-                >
-                  Link do Projeto
-                </a>
+                <div className="max-[620px]:mx-auto">
+                  <a
+                    href={src}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-average"
+                  >
+                    Link do Projeto
+                  </a>
+                </div>
               </div>
             </div>
           ))}
