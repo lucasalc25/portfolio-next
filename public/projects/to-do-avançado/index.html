@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Avançado</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- JS -->
+    <script src="./js/scripts.js" defer></script>
+
+</head>
+<body>
+    <div class="task-container">
+        <header>
+            <h1>Gerenciador de Tarefas</h1>
+            <hr>
+        </header>
+        <form id="task-form">
+            <h4>Adicione sua tarefa</h4>
+            <input type="text" id="task-input" placeholder="O que vai fazer?">
+            <button type="submit">
+                <i class="fa-thin fa-plus"></i>
+            </button>
+        </form>
+        <form id="edit-form" class="hide">
+            <div class="form-control">
+                <h4>Edite sua tarefa</h4>
+                <input type="text" id="edit-input">
+                <button type="submit" id="edit-btn">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+                <button id="cancel-edit-btn">Cancelar</button>
+            </div>
+        </form>
+        <hr>
+        <div id="toolbar">
+            <div id="search">
+                <h4>Pesquisar:</h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="Buscar...">
+                    <button id="erase-btn">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            <div id="filter">
+                <h4>Filtrar:</h4>
+                <select id="filter-select">
+                    <option value="all">Todas</option>
+                    <option value="done">Feitas</option>
+                    <option value="pending">Pendentes</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div id="task-list">
+        </div>
+    </div> 
+</body>
+</html>

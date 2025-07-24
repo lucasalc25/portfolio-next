@@ -8,7 +8,7 @@ const projects = [
     title: "Gerenciador de Tarefas",
     type: "html",
     desc: "Um aplicativo simples para criar, editar e excluir tarefas. Ideal para ajudar no gerenciamento de atividades diárias, oferecendo uma interface amigável e intuitiva para organizar suas tarefas. Também conta com funções de pesquisa e filtragem.",
-    src: "/projects-html/",
+    src: "/projects/to-do-avançado/index.html",
   },
   {
     img: "/images/gerador-de-senhas.png",
@@ -16,7 +16,7 @@ const projects = [
     title: "Gerenciador de senhas",
     type: "html",
     desc: "Um aplicativo para gerar e copiar senhas com opção de incluir, ou não, símbolos, números ou letras.",
-    src: "/projects-html/",
+    src: "/projects/gerador-de-senhas/index.html",
   },
   {
     img: "./images/dev-notes.png",
@@ -24,7 +24,7 @@ const projects = [
     title: "DevNotes",
     type: "html",
     desc: "Um bloco de notas digital, onde é possível criar, editar e fixar anotações de forma eficiente. Ideal para armazenar códigos, snippets, e informações úteis durante o desenvolvimento de projetos.Também é possível realizar o download das notas em um arquivo CSV.",
-    src: "/projects-html/",
+    src: "/projects/dev-notes/index.html",
   },
   {
     img: "/images/gerador-qr-code.png",
@@ -32,7 +32,7 @@ const projects = [
     title: "Gerador de QR Code",
     type: "html",
     desc: "Um aplicativo simples que gera QR Codes a partir de URLs ou textos inseridos pelo usuário. Útil para compartilhar informações de forma rápida e prática.",
-    src: "/projects-html/",
+    src: "/projects/gerador-qr-code/index.html",
   },
   {
     img: "/images/spotify-clone.png",
@@ -40,7 +40,7 @@ const projects = [
     title: "Réplica Spotify Web",
     type: "next",
     desc: "Este projeto recria a página pública do Spotify, com foco em responsividade, design moderno e interatividade. Desenvolvido com React e Tailwind CSS, o layout apresenta seções como carrosséis de playlists, destaques musicais e navegação visual, simulando a experiência do site oficial sem funcionalidades de login ou reprodução musical.",
-    src: "/projects/spotify-clone/index.html",
+    src: "/public-spotify-clone.vercel.app",
   },
   {
     img: "/images/pokedex.png",
@@ -48,7 +48,7 @@ const projects = [
     title: "Pokedex API",
     type: "html",
     desc: "Um aplicativo que utiliza uma API para fornecer informações detalhadas sobre diversos Pokémon. Permite que os usuários visualizem dados como fotos, nomes e tipos de diferentes Pokémon, ideal para fãs e entusiastas.",
-    src: "/projects/pokedex/pokedex.html",
+    src: "/projects/pokedex/index.html",
   },
 ];
 
