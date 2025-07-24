@@ -28,7 +28,7 @@ export default function Welcome() {
 
         {/* Botão */}
         <div id="home-btn" className="mt-[5rem] text-center text-white">
-          <a href="#projects" className="btn hover:-translate-y-[3px]">
+          <a href="#projetos" className="btn hover:-translate-y-[3px]">
             Projetos
           </a>
         </div>

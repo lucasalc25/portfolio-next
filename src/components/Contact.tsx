@@ -59,7 +59,15 @@ export default function Contact() {
               ></textarea>
             </div>
 
-            <a type="submit" className="btn contact-btn">
+            <a
+              onClick={() =>
+                alert(
+                  "Foi mal, este formulário é apenas para fins didáticos :/"
+                )
+              }
+              type="submit"
+              className="btn contact-btn"
+            >
               Enviar
             </a>
           </form>

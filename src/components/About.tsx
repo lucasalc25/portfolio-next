@@ -58,7 +58,7 @@ export default function About() {
           e crescer. Se você tiver uma oportunidade que corresponda às minhas
           competências, entre em contato por favor.
         </p>
-        <a className="btn btn-average" href="#contact">
+        <a className="btn btn-average" href="#contato">
           Contato
         </a>
       </div>
