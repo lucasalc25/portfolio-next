@@ -2,7 +2,7 @@
 import React from "react";
 import { CircleChevronDown, House, PanelTop, Search, Menu } from "lucide-react";
 
-export default function Header() {
+export default function Header({ onMenuClick }: { onMenuClick: () => void }) {
   return (
     <div>
       {/* WEB */}
@@ -133,33 +133,33 @@ export default function Header() {
       </header>
 
       {/* MOBILE */}
-      <div className="fixed flex items-center w-full p-4 h-16 z-30 bg-[linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9),#121212)] min-sm:hidden">
-        <div className="z-40">
-          <div className="flex items-center justify-between w-full">
-            <div>
-              <a
-                href="/spotify-clone"
-                className="flex items-center justify-center min-w-18 h-8"
-              >
-                <img
-                  src="./projects/spotify-clone/logo_spotify.png"
-                  alt="Logo do projeto"
-                  className="w-6 h-6"
-                />
-                <span className="text-base font-bold text-white">Spotify</span>
-              </a>
-            </div>
+      <div className="fixed flex items-center w-full p-4 h-14 z-30 bg-black min-sm:hidden">
+        <div className="flex items-center justify-between w-full">
+          <div>
+            <a
+              href="/spotify-clone"
+              className="flex items-center justify-center gap-1 min-w-18 h-8"
+            >
+              <img
+                src="./projects/spotify-clone/logo_spotify.png"
+                alt="Logo do projeto"
+                className="w-6 h-6"
+              />
+              <span className="text-base font-bold text-white tracking-wide mt-0.5">
+                Spotify
+              </span>
+            </a>
+          </div>
+          <div className="flex items-center">
+            <button className="flex items-center h-8 bg-white rounded-full cursor-pointer hover:scale-[1.04] hover:bg-zinc-100">
+              <span className="text-[0.825rem] font-bold text-black truncate tracking-tight px-4 py-1">
+                Abrir o app
+              </span>
+            </button>
             <div className="flex items-center">
-              <button className="flex items-center h-8 bg-white rounded-full cursor-pointer hover:scale-[1.04] hover:bg-zinc-100">
-                <span className="text-[0.8125rem] font-bold text-zinc-950 truncate px-4 py-1">
-                  Abrir o app
-                </span>
+              <button className="flex items-center justify-center ps-4 z-[6] cursor-pointer text-white">
+                <Menu onClick={onMenuClick} size={24} />
               </button>
-              <div className="flex items-center">
-                <button className="flex items-center justify-center ps-4 z-[6] cursor-pointer text-white">
-                  <Menu size={24} />
-                </button>
-              </div>
             </div>
           </div>
         </div>
