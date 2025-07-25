@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import React from "react";
 
 const projects = [
@@ -40,7 +41,7 @@ const projects = [
     title: "Réplica Spotify Web",
     type: "next",
     desc: "Este projeto recria a página pública do Spotify, com foco em responsividade, design moderno e interatividade. Desenvolvido com React e Tailwind CSS, o layout apresenta seções como carrosséis de playlists, destaques musicais e navegação visual, simulando a experiência do site oficial sem funcionalidades de login ou reprodução musical.",
-    src: "https://public-spotify-clone.vercel.app/",
+    src: "/spotify-clone",
   },
   {
     img: "/images/pokedex.png",
@@ -83,14 +84,9 @@ export default function Projects() {
                   {desc}
                 </p>
                 <div className="max-[620px]:mx-auto">
-                  <a
-                    href={src}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="btn btn-average"
-                  >
+                  <Link href={src} target="_blank" className="btn btn-average">
                     Link do Projeto
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
