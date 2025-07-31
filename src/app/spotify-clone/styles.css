@@ -15,7 +15,7 @@ body {
 .main-footer-containers {
   display: flex;
   margin-top: 32px;
-  width: 40%;
+  width: 20%;
 }
 
 .main-footer-containers {
@@ -46,26 +46,29 @@ body {
     justify-content: space-between;
     flex-direction: row;
   }
-}
-
-@media (min-width: 992px) {
   .main-footer {
     flex: 1 1 50%;
     padding-bottom: 0px;
   }
 }
 
-@media (min-width: 768px) {
-  .main-footer {
-    flex-direction: row;
+@media (max-width: 992px) {
+  .main-footer-containers {
+    width: 40%;
+    margin-right: 24px;
+    margin-top: 0;
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .main-footer-containers {
-    width: 80%;
-    margin-right: 24px;
-    margin-top: 0;
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-footer {
+    flex-direction: row;
   }
 }
 
