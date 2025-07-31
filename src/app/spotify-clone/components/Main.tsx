@@ -1,6 +1,4 @@
 import React from "react";
-import "swiper/css";
-import "swiper/css/navigation";
 import CarouselSections from "./CarouselSections";
 import { FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa6";
 
