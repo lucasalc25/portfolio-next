@@ -1,7 +1,20 @@
-"use client";
-import React from "react";
+import React, { useEffect } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
 export default function Contact() {
+  const [state, handleSubmit] = useForm("xblkkywb");
+
+  // Mostrar alerta uma vez após sucesso
+  useEffect(() => {
+    if (state.succeeded) {
+      alert("Obrigado pelo contato!");
+    }
+  }, [state.succeeded]);
+
+  if (state.succeeded) {
+    return <p className="text-green-600">Mensagem enviada com sucesso!</p>;
+  }
+
   return (
     <section
       id="contato"
@@ -9,17 +22,17 @@ export default function Contact() {
     >
       <div className="section-container">
         <h2 className="section-title">Contato</h2>
-        <p className="description">
-          O formulário abaixo serve apenas para fins de estética e aprendizado.
+        <p className="description" style={{ textAlign: "center" }}>
+          Tem uma dúvida, proposta ou sugestão? Preencha o formulário abaixo e
+          responderei o mais breve possível.
         </p>
 
         <div className="bg-white rounded-[5px] shadow-[0_7px_29px_0_rgba(100,100,111,0.2)] p-16 w-[95%] max-w-[80rem] m-[5rem_auto_0_auto]">
-          <form className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div className="form-field-container">
               <label htmlFor="name" className="form-label">
                 Nome
               </label>
-
               <input
                 required
                 id="name"
@@ -27,6 +40,11 @@ export default function Contact() {
                 type="text"
                 placeholder="Digite seu nome..."
                 className="form-input"
+              />
+              <ValidationError
+                prefix="Nome"
+                field="name"
+                errors={state.errors}
               />
             </div>
 
@@ -42,13 +60,17 @@ export default function Contact() {
                 placeholder="Digite seu email..."
                 className="form-input"
               />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
             </div>
 
             <div className="form-field-container">
               <label htmlFor="message" className="form-label">
                 Mensagem
               </label>
-
               <textarea
                 required
                 id="message"
@@ -57,19 +79,20 @@ export default function Contact() {
                 placeholder="Digite sua mensagem..."
                 className="form-input"
               ></textarea>
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
             </div>
 
-            <a
-              onClick={() =>
-                alert(
-                  "Foi mal, este formulário é apenas para fins didáticos :/"
-                )
-              }
+            <button
               type="submit"
+              disabled={state.submitting}
               className="btn contact-btn"
             >
               Enviar
-            </a>
+            </button>
           </form>
         </div>
       </div>

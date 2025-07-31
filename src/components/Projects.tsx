@@ -66,7 +66,7 @@ export default function Projects() {
     <section id="projetos" className="sections second-pad">
       <div className="section-container">
         <h2 className="section-title">Projetos</h2>
-        <p className="description">
+        <p className="description" style={{ textAlign: "center" }}>
           Aqui você encontrará alguns dos projetos pessoais e acadêmicos que
           criei. Espero que goste!
         </p>

@@ -27,11 +27,15 @@ const skills = [
     src: "/images/logo-react.png",
     alt: "Logo do React",
   },
-
   {
     name: "Next.js",
     src: "/images/logo-next.png",
     alt: "Logo do Next.js",
+  },
+  {
+    name: "Typescript",
+    src: "/images/logo-typescript.png",
+    alt: "Logo do Typescript",
   },
   {
     name: "Python",
@@ -66,7 +70,7 @@ export default function About() {
         <h3 className="text-[#111] text-center font-bold text-[2.8rem] mb-[5rem]">
           Habilidades
         </h3>
-        <div className="flex justify-around items-center flex-wrap gap-y-[2rem] gap-x-[4rem]">
+        <div className="flex justify-around items-center flex-wrap gap-y-[3rem] gap-x-[3rem]">
           {skills.map((skill, index) => (
             <div key={index} className="flex justify-center w-1/4 p-4">
               <img src={skill.src} alt={skill.name} />
