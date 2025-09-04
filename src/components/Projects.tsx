@@ -52,8 +52,16 @@ const projects = [
     src: "/spotify-clone",
   },
   {
-    img: "/images/easylog.png",
+    img: "/images/tmdb-explorer.png",
     alt: "Projeto 6",
+    title: "Explorador de filmes - TMDB API",
+    type: "next",
+    desc: "Este projeto recria a página pública do Spotify, com foco em responsividade, design moderno e interatividade. Desenvolvido com React e Tailwind CSS, o layout apresenta seções como carrosséis de playlists, destaques musicais e navegação visual, simulando a experiência do site oficial sem funcionalidades de login ou reprodução musical.",
+    src: "https://tmdb-explorer-api.vercel.app/",
+  },
+  {
+    img: "/images/easylog.png",
+    alt: "Projeto 7",
     title: "Easylog",
     type: "next",
     desc: "Uma aplicação desktop desenvolvida em Python para automatizar tarefas em um sistema privado, utilizando Tkinter, PyAutoGUI, Pandas, OpenCV, e outras bibliotecas para agilizar processos e reduzir o esforço manual da equipe.",
