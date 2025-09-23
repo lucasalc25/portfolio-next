@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getMovieDetails, tmdbImg } from "@/app/tmdb-explorer/lib/tmdb";
 
-type Params = { params: { id: string } };
+type Params = { params: { id: number } };
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const movie = await getMovieDetails(params.id).catch(() => null);
