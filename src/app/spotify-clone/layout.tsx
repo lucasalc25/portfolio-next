@@ -1,4 +1,10 @@
 import "./styles.css";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Spotify Web",
+  description: "Música pra todos",
+};
 
 export default function SpotifyLayout({
   children,
