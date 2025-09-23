@@ -1,10 +1,16 @@
 "use client"; // necessário para habilitar interatividade no App Router
 import { useState } from "react";
+import type { Metadata } from "next";
 import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Menu from "./components/Menu";
+
+export const metadata: Metadata = {
+  title: "Spotify Web",
+  description: "Música pra todos",
+};
 
 export default function SpotifyClone() {
   const [menuAberto, setMenuAberto] = useState(false);
