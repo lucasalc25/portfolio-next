@@ -4,26 +4,30 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getMovieDetails, tmdbImg } from "@/app/tmdb-explorer/lib/tmdb";
 
-type Params = { params: { id: number } };
-
-export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const movie = await getMovieDetails(params.id).catch(() => null);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+  const movie = await getMovieDetails(id).catch(() => null);
   if (!movie) return { title: "Filme não encontrado | TMDB Explorer" };
+
   return {
     title: `${movie.title} (${
       movie.release_date?.slice(0, 4) ?? "—"
     }) | TMDB Explorer`,
     description: movie.overview?.slice(0, 150),
-    openGraph: {
-      title: movie.title,
-      description: movie.overview,
-      images: tmdbImg(movie.backdrop_path, "w500") ?? undefined,
-    },
   };
 }
 
-export default async function MoviePage({ params }: Params) {
-  const movie = await getMovieDetails(params.id).catch(() => null);
+export default async function MoviePage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const movie = await getMovieDetails(id).catch(() => null);
   if (!movie) notFound();
 
   const poster = tmdbImg(movie.poster_path, "w500");
