@@ -55,12 +55,11 @@ export default function About() {
       <div className="section-container about-container">
         <h2 className="section-title">Sobre</h2>
         <p className="description">
-          Me chamo Lucas Alcântara, tenho 27 anos e estou concluindo este ano
-          uma graduação em Ciência da Computação e cursos especializados em
-          Desenvolvimento Web voltado para o Front-End. Estou muito empolgado e
-          aberto a oportunidades de trabalho onde eu possa contribuir, aprender
-          e crescer. Se você tiver uma oportunidade que corresponda às minhas
-          competências, entre em contato por favor.
+          Estudante de Ciência da Computação na UNIP, venho me especializando em
+          Desenvolvimento Front-end há 3 anos, criando projetos acadêmicos e
+          pessoais com as tecnologias abaixo. Atualmente, desenvolvo um Design
+          System como TCC, unindo boas práticas de usabilidade e consistência
+          visual.
         </p>
         <a className="btn btn-average" href="#contato">
           Contato

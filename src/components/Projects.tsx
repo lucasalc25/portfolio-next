@@ -83,8 +83,7 @@ export default function Projects() {
       <div className="section-container">
         <h2 className="section-title">Projetos</h2>
         <p className="description" style={{ textAlign: "center" }}>
-          Aqui você encontrará alguns dos projetos pessoais e acadêmicos que
-          criei. Espero que goste!
+          Aqui você encontrará meus principais projetos. Espero que goste!
         </p>
 
         <div>
@@ -93,7 +92,7 @@ export default function Projects() {
               key={title}
               className="grid grid-cols-2 gap-[5rem] mb-[11rem] last:mb-0 max-[620px]:grid-cols-1 max-[620px]:gap-[1rem]"
             >
-              <div className="border-[10px] border-[#111] rounded-[10px] overflow-hidden">
+              <div className="border-[10px] border-[#eee] rounded-[10px] overflow-hidden">
                 <img
                   src={img}
                   alt={alt}
@@ -104,7 +103,7 @@ export default function Projects() {
                 <h3 className="font-bold text-[2.8rem] mb-8  max-[620px]:mx-auto">
                   {title}
                 </h3>
-                <p className="text-[1.8rem] text-justify text-[#666] max-w-[60rem] leading-[1.7] mb-12">
+                <p className="text-[1.8rem] text-justify text-[#eee] max-w-[60rem] leading-[1.7] mb-12">
                   {desc}
                 </p>
                 <div className="max-[620px]:mx-auto">

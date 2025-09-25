@@ -27,7 +27,7 @@ export default function Contact() {
           responderei o mais breve possível.
         </p>
 
-        <div className="bg-white rounded-[5px] shadow-[0_7px_29px_0_rgba(100,100,111,0.2)] p-16 w-[95%] max-w-[80rem] m-[5rem_auto_0_auto]">
+        <div className="bg-[#0D1117] rounded-[5px] shadow-[0_7px_29px_0_rgba(130,52,233,1)] p-16 w-[95%] max-w-[80rem] m-[5rem_auto_0_auto]">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="form-field-container">
               <label htmlFor="name" className="form-label">

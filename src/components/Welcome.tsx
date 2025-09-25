@@ -4,7 +4,7 @@ export default function Welcome() {
   return (
     <section
       id="welcome"
-      className="welcome relative min-h-screen flex flex-col justify-center items-center bg-[linear-gradient(to_right,rgba(245,245,245,0.8),rgba(245,245,245,0.8)),url(/daac885…/c157c/assets/svg/common-bg.svg)] bg-center animate-[welcome-show_1s]"
+      className="welcome relative min-h-screen flex flex-col justify-center items-center bg-[#121214] bg-center animate-[welcome-show_1s]"
     >
       <div
         id="welcome-content"
@@ -13,14 +13,14 @@ export default function Welcome() {
         {/* Título */}
         <h1
           id="welcome-title"
-          className="text-[6rem] text-[#333] font-extrabold uppercase tracking-[3px] text-center"
+          className="text-[6rem] text-[#eee] font-extrabold uppercase tracking-[3px] text-center"
         >
           Bem-vindo(a)!
         </h1>
 
         {/* Info */}
         <div id="welcome-info" className="mt-[3rem] mx-auto max-w-[80rem]">
-          <p className="text-[#333] text-[2.2rem] text-center leading-[1.6] w-full">
+          <p className="text-[#eee] text-[2.2rem] text-center leading-[1.6] w-full">
             Aqui você conhecerá um entusiasta da web apaixonado por criar
             experiências incríveis.
           </p>
@@ -40,7 +40,7 @@ export default function Welcome() {
       >
         <div
           id="mouse"
-          className="relative w-[80px] h-[110px] border-2 border-neutral-800 rounded-[60px] overflow-hidden before:content-[''] before:absolute before:w-[9px] before:h-[18px] before:top-[15px] before:left-1/2 before:-translate-x-1/2 before:bg-neutral-800 before:rounded-full before:opacity-100 before:animate-mouse-scroll"
+          className="relative w-[80px] h-[110px] border-2 border-neutral-300 rounded-[60px] overflow-hidden before:content-[''] before:absolute before:w-[9px] before:h-[18px] before:top-[15px] before:left-1/2 before:-translate-x-1/2 before:bg-neutral-300 before:rounded-full before:opacity-100 before:animate-mouse-scroll"
         ></div>
       </div>
     </section>

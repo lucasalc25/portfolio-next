@@ -2,7 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#d14c49] min-h-[100px] px-12 py-5 flex flex-col items-center justify-center">
+    <footer className="w-full bg-[linear-gradient(to_top,rgba(199,125,255,0.8),rgba(130,52,233,0.9)),url(/daac885…/c157c/assets/svg/common-bg.svg)] shadow-[0_5px_15px_0_rgba(0,0,0,0.2)] min-h-[100px] px-12 py-5 flex flex-col items-center justify-center">
       <ul className="flex justify-center items-center m-[10px_0] flex-wrap">
         <li className="social-icon__item">
           <a

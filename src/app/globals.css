@@ -2,6 +2,7 @@
 
 body {
   font-family: "Source Sans Pro", sans-serif;
+  background: #121214;
 }
 
 .btn {
@@ -9,11 +10,11 @@ body {
   font-size: 2rem;
   background: linear-gradient(
       to top,
-      rgba(231, 108, 106, 0.7),
-      rgba(204, 55, 51, 0.9)
+      rgba(199, 125, 255, 0.8),
+      rgba(130, 52, 233, 0.9)
     ),
     url(/daac885…/c157c/assets/svg/common-bg.svg);
-  color: #fff;
+  color: #eee;
   text-transform: uppercase;
   letter-spacing: 1px;
   display: inline-block;
@@ -54,7 +55,7 @@ body {
 }
 
 .sections {
-  color: #333;
+  color: #eee;
   position: relative;
 }
 
@@ -80,7 +81,7 @@ body {
   text-align: center;
   font-weight: 800;
   margin-bottom: 4rem;
-  color: #111;
+  color: #eee;
 }
 
 .section-title::after {
@@ -89,7 +90,7 @@ body {
   top: calc(80% + 1.5rem);
   height: 5px;
   width: 10rem;
-  background: #d14c49;
+  background: #8234e9;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
@@ -98,7 +99,7 @@ body {
 .description {
   display: block;
   text-align: justify;
-  color: #555;
+  color: #eee;
   font-size: 2rem;
   font-weight: 500;
   max-width: 60rem;
@@ -112,7 +113,7 @@ body {
 }
 
 .form-label {
-  color: #666;
+  color: #eee;
   font-size: 1.4rem;
   letter-spacing: 1px;
   font-weight: 700;
@@ -122,13 +123,13 @@ body {
 }
 
 .form-input {
-  color: #333;
+  color: #eee;
   padding: 2rem;
   width: 100%;
-  border: 1px solid #ebebeb;
+  border: 1px solid #666;
   font-size: 1.6rem;
   letter-spacing: 0;
-  background: #f0f0f0;
+  background: #0d1117;
   border-radius: 5px;
   font-weight: 600;
 }
@@ -139,18 +140,6 @@ body {
   font-size: 1.6rem;
   border-radius: 10px;
   cursor: pointer;
-}
-
-.footer {
-  position: relative;
-  width: 100%;
-  background: #d14c49;
-  min-height: 100px;
-  padding: 20px 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .social-icon,
@@ -170,7 +159,7 @@ body {
 
 .social-icon__link {
   font-size: 2.5rem;
-  color: #fff;
+  color: #eee;
   margin: 0 20px;
   display: inline-block;
   transition: 0.5s;
@@ -182,7 +171,7 @@ body {
 
 .menu__link {
   font-size: 1.4rem;
-  color: #fff;
+  color: #eee;
   margin: 0 10px;
   display: inline-block;
   transition: 0.5s;
