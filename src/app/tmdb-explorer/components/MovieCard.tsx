@@ -10,7 +10,7 @@ export default function MovieCard({ m }: MovieCardProps) {
   const year = m.release_date ? new Date(m.release_date).getFullYear() : "—";
 
   return (
-    <Link href={`/movie/${m.id}`} className="block">
+    <Link href={`/tmdb-explorer/movie/${m.id}`} className="block">
       <article className="group rounded-2xl border border-zinc-800 bg-zinc-900/50 p-3 transition hover:border-zinc-700">
         <div className="flex gap-3">
           <div className="h-30 w-20 flex-none overflow-hidden rounded-md bg-zinc-800">

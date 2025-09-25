@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@media (min-width: 1900px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 100%;
+  }
+}

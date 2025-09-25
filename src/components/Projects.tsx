@@ -5,7 +5,7 @@ import React from "react";
 const projects = [
   {
     img: "./images/to-do.png",
-    alt: "Projeto 1",
+    alt: "Gerenciador de Tarefas",
     title: "Gerenciador de Tarefas",
     type: "html",
     desc: "Um projeto que cria, edita e exclui tarefas. Ideal para ajudar no gerenciamento de atividades diárias, oferecendo uma interface amigável e intuitiva para organizar suas tarefas. Também conta com funções de pesquisa e filtragem.",
@@ -13,7 +13,7 @@ const projects = [
   },
   {
     img: "/images/gerador-de-senhas.png",
-    alt: "Projeto 2",
+    alt: "Gerenciador de senhas",
     title: "Gerenciador de senhas",
     type: "html",
     desc: "Um projeto para gerar e copiar senhas com opção de incluir, ou não, símbolos, números ou letras.",
@@ -21,7 +21,7 @@ const projects = [
   },
   {
     img: "./images/dev-notes.png",
-    alt: "Projeto 3",
+    alt: "DevNotes",
     title: "DevNotes",
     type: "html",
     desc: "Um bloco de notas digital, onde é possível criar, editar e fixar anotações de forma eficiente. Ideal para armazenar códigos, snippets, e informações úteis durante o desenvolvimento de projetos.Também é possível realizar o download das notas em um arquivo CSV.",
@@ -29,7 +29,7 @@ const projects = [
   },
   {
     img: "/images/gerador-qr-code.png",
-    alt: "Projeto 4",
+    alt: "Gerador de QR Code",
     title: "Gerador de QR Code",
     type: "html",
     desc: "Um projeto simples que gera QR Codes a partir de URLs ou textos inseridos pelo usuário. Útil para compartilhar informações de forma rápida e prática.",
@@ -37,7 +37,7 @@ const projects = [
   },
   {
     img: "/images/pokedex.png",
-    alt: "Projeto 6",
+    alt: "Pokedex API",
     title: "Pokedex API",
     type: "html",
     desc: "Um projeto que utiliza uma API para fornecer informações detalhadas sobre diversos Pokémon. Permite que os usuários visualizem dados como fotos, nomes e tipos de diferentes Pokémon, ideal para fãs e entusiastas.",
@@ -45,7 +45,7 @@ const projects = [
   },
   {
     img: "/images/spotify-clone.png",
-    alt: "Projeto 5",
+    alt: "Réplica Spotify",
     title: "Réplica Spotify",
     type: "next",
     desc: "Este projeto recria a página pública do Spotify, com foco em responsividade, design moderno e interatividade. Desenvolvido com React e Tailwind CSS, o layout apresenta seções como carrosséis de playlists, destaques musicais e navegação visual, simulando a experiência do site oficial sem funcionalidades de login ou reprodução musical.",
@@ -53,7 +53,7 @@ const projects = [
   },
   {
     img: "/images/tmdb-explorer.png",
-    alt: "Projeto 6",
+    alt: "Explorador de filmes - TMDB API",
     title: "Explorador de filmes - TMDB API",
     type: "next",
     desc: "Aplicação desenvolvida com Next.js, React e Tailwind CSS que consome a API do The Movie Database (TMDB). O projeto permite explorar filmes de forma interativa, oferecendo busca por título, filtros por gênero e ano de lançamento, opções de ordenação por popularidade, nota e data, além de páginas de detalhes completos de cada filme.",
@@ -61,7 +61,7 @@ const projects = [
   },
   {
     img: "/images/quiz-battle.png",
-    alt: "Projeto 7",
+    alt: "Quiz Battle",
     title: "Quiz Battle",
     type: "next",
     desc: "Quiz interativo desenvolvido em Python/Flask com banco de dados SQL. O projeto conta com ranking semanal e de melhor partida, roleta animada de temas com áudio, timer por pergunta e feedback em tempo real",
@@ -69,7 +69,7 @@ const projects = [
   },
   {
     img: "/images/easylog.png",
-    alt: "Projeto 8",
+    alt: "Easylog",
     title: "Easylog",
     type: "next",
     desc: "Uma aplicação desktop desenvolvida em Python para automatizar tarefas em um sistema privado, utilizando Tkinter, PyAutoGUI, Pandas, OpenCV, e outras bibliotecas para agilizar processos e reduzir o esforço manual da equipe.",

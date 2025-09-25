@@ -18,6 +18,11 @@ export async function generateMetadata({
       movie.release_date?.slice(0, 4) ?? "—"
     }) | TMDB Explorer`,
     description: movie.overview?.slice(0, 150),
+    openGraph: {
+      title: movie.title,
+      description: movie.overview,
+      images: tmdbImg(movie.backdrop_path, "w500") ?? undefined,
+    },
   };
 }
 
@@ -56,7 +61,7 @@ export default async function MoviePage({
 
         <div className="mx-[23.5%] max-w-5xl p-6">
           <Link
-            href="/"
+            href="/tmdb-explorer"
             className="inline-block text-sm text-zinc-300 hover:text-zinc-100"
           >
             ← Voltar
