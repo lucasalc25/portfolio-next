@@ -1,53 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-
-const skills = [
-  {
-    name: "HTML",
-    src: "/images/logo-html.png",
-    alt: "Logo do HTML",
-  },
-  {
-    name: "CSS",
-    src: "/images/logo-css.png",
-    alt: "Logo do CSS",
-  },
-  {
-    name: "JavaScript",
-    src: "/images/logo-js.png",
-    alt: "Logo do JavaScript",
-  },
-  {
-    name: "Tailwind",
-    src: "/images/logo-tailwind.png",
-    alt: "Logo do Tailwind",
-  },
-  {
-    name: "React",
-    src: "/images/logo-react.png",
-    alt: "Logo do React",
-  },
-  {
-    name: "Next.js",
-    src: "/images/logo-next.png",
-    alt: "Logo do Next.js",
-  },
-  {
-    name: "Typescript",
-    src: "/images/logo-typescript.png",
-    alt: "Logo do Typescript",
-  },
-  {
-    name: "Python",
-    src: "/images/logo-python.png",
-    alt: "Logo do Python",
-  },
-  {
-    name: "Git",
-    src: "/images/logo-github.png",
-    alt: "Logo do Git",
-  },
-];
+import {
+  TbBrandCss3,
+  TbBrandHtml5,
+  TbBrandJavascript,
+  TbBrandTypescript,
+  TbBrandReact,
+  TbBrandNextjs,
+} from "react-icons/tb";
+import { DiPostgresql } from "react-icons/di";
+import { BiLogoGithub, BiLogoPython, BiLogoTailwindCss } from "react-icons/bi";
+import { FaGitAlt } from "react-icons/fa6";
+import { CgFigma } from "react-icons/cg";
+import { SiStyledcomponents } from "react-icons/si";
 
 export default function About() {
   return (
@@ -65,16 +30,53 @@ export default function About() {
           Contato
         </a>
       </div>
-      <div className="section-container text-center mb-[8rem] pt-[2rem]">
-        <h3 className="text-[#111] text-center font-bold text-[2.8rem] mb-[5rem]">
+      <div className="section-container">
+        <h3 className="text-[#eee] text-center font-bold text-[3.2rem] mb-[3rem]">
           Habilidades
         </h3>
         <div className="flex justify-around items-center flex-wrap gap-y-[3rem] gap-x-[3rem]">
-          {skills.map((skill, index) => (
-            <div key={index} className="flex justify-center w-1/4 p-4">
-              <img src={skill.src} alt={skill.name} />
-            </div>
-          ))}
+          <ul className="flex flex-wrap max-w-[70rem] w-[90%] gap-[1.3rem] justify-center">
+            <li className="skills-item">
+              <TbBrandHtml5 size={"full"} color="#eee" />
+            </li>
+            <li className="skills-item">
+              <TbBrandCss3 size={"full"} color="#eee" />
+            </li>
+            <li className="skills-item">
+              <TbBrandJavascript size={"full"} color="#eee" />
+            </li>
+            <li className="skills-item">
+              <TbBrandTypescript size={"full"} color="#eee" />
+            </li>
+            <li className="skills-item">
+              <TbBrandReact size={"full"} color="#eee" />
+            </li>
+            <li className="skills-item">
+              <TbBrandNextjs size={"full"} color="#eee" />
+            </li>
+
+            <li className="skills-item">
+              <BiLogoTailwindCss size={"full"} color="#eee" />
+            </li>
+            <li className="skills-item">
+              <SiStyledcomponents size={"full"} color="#eee" />
+            </li>
+            <li className="skills-item">
+              <BiLogoPython size={"full"} color="#eee" />
+            </li>
+            <li className="skills-item">
+              <DiPostgresql size={"full"} color="#eee" />
+            </li>
+            <li className="skills-item">
+              <FaGitAlt size={"full"} color="#eee" />
+            </li>
+            <li className="skills-item">
+              <BiLogoGithub size={"full"} color="#eee" />
+            </li>
+            <li className="skills-item">
+              <CgFigma size={"full"} color="#eee" />
+            </li>
+          </ul>
         </div>
       </div>
     </section>

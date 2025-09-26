@@ -68,7 +68,7 @@ body {
   max-width: 120rem;
   margin: auto;
   width: 92%;
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -219,7 +219,7 @@ body {
 
 @media only screen and (min-width: 1900px) {
   html {
-    font-size: 65%;
+    font-size: 80%;
   }
 }
 
@@ -322,8 +322,8 @@ body {
     font-size: 4rem;
   }
 
-  #mouse-scroll-cont {
-    display: none;
+  #mouse {
+    border: none;
   }
 
   .section-title::after {
@@ -342,6 +342,7 @@ body {
 
   .description {
     font-size: 1.7rem;
+    padding: 1rem;
   }
 
   .form-container {
@@ -363,4 +364,11 @@ body {
       top: 59px;
     }
   }
+}
+
+.skills-item {
+  width: 30%;
+  max-width: 8.8rem;
+  text-align: center;
+  margin: 0.2rem 0.2rem 1.2rem;
 }

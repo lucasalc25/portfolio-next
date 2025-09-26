@@ -2,6 +2,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { useEffect, useRef, useState } from "react";
+import { IoCloseSharp } from "react-icons/io5";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function Header() {
   const headerRef = useRef<HTMLElement | null>(null);
@@ -84,17 +86,9 @@ export default function Header() {
               onClick={toggleMenu}
             >
               {!menuOpen ? (
-                <img
-                  src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg"
-                  alt="hamburger menu"
-                  className="w-full"
-                />
+                <RxHamburgerMenu size={"full"} color="#eee" />
               ) : (
-                <img
-                  src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg"
-                  alt="hamburger menu close"
-                  className="w-full"
-                />
+                <IoCloseSharp size={"full"} color="#eee" />
               )}
             </div>
           </div>
