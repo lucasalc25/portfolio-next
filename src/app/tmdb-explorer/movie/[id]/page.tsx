@@ -58,33 +58,34 @@ export default async function MoviePage({
             <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-transparent to-zinc-950" />
           </>
         )}
-
-        <div className="mx-[23.5%] max-w-5xl p-6">
-          <Link
-            href="/tmdb-explorer"
-            className="inline-block text-sm text-zinc-300 hover:text-zinc-100"
-          >
-            ← Voltar
-          </Link>
-        </div>
       </section>
 
       <div className="mx-auto max-w-5xl px-6 pb-10">
         <section className="flex flex-col gap-6 sm:flex-row">
-          <div className="w-40 shrink-0 overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900">
-            {poster ? (
-              <Image
-                src={poster}
-                alt={`Pôster de ${movie.title}`}
-                width={342}
-                height={513}
-                className="h-auto w-full"
-              />
-            ) : (
-              <div className="grid h-[513px] w-[342px] place-items-center text-xs text-zinc-500">
-                sem pôster
-              </div>
-            )}
+          <div className="flex flex-col z-10 sm:-my-10">
+            <div className="p-[10px]">
+              <Link
+                href="/tmdb-explorer"
+                className="inline-block text-sm text-zinc-300 hover:text-zinc-100"
+              >
+                ← Voltar
+              </Link>
+            </div>
+            <div className="w-52 shrink-0 overflow-hidden rounded-xl border border-zinc-800 bg-zinc-900">
+              {poster ? (
+                <Image
+                  src={poster}
+                  alt={`Pôster de ${movie.title}`}
+                  width={342}
+                  height={513}
+                  className="h-auto w-full"
+                />
+              ) : (
+                <div className="grid h-[513px] w-[342px] place-items-center text-xs text-zinc-500">
+                  sem pôster
+                </div>
+              )}
+            </div>
           </div>
 
           <div className="flex-1">
